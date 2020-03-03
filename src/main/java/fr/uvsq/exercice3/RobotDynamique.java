@@ -7,28 +7,33 @@ public class RobotDynamique extends Robot  {
 		super(position, direction);
 		
 	}
-	public void avancer(int x , int y ){
-		 this.position.change_position(x, y);
-		
+	public void avance() {
+	    switch (this.getDirection()) {
+	    case NORD:
+	            this.getposition().changeY(1); break ;
+	        case EST:
+	        	 this.getposition().changeX(1);break ;
+	        case OUEST:
+	        	 this.getposition().changeX(-1);break ;
+	        case SUD:
+	        	 this.getposition().changeY(-1);break ;
+	       
+
+	    }
 	}
 	
-	public void tourne(Direction direction){
-	if(direction.equals("n"))
-	{
-		direction = Direction.NORD ;
+	public void tourne() {
+	    switch (this.getDirection()) {
+	    case NORD:
+	        this.direction = Direction.EST ;
+	    case EST:
+	    	this.direction = Direction.SUD ;
+	    case OUEST:
+	    	this.direction = Direction.NORD;
+	    case SUD:
+	    	this.direction = Direction.OUEST ;
+	    default:
 	}
-	else if(direction.equals("e"))
-	{
-		direction = Direction.EST ;
-	}
-	else if(direction.equals("s"))
-	{
-		direction = Direction.SUD ;
-	}
-	{
-		direction = Direction.OUEST ;
-	}
-	
 	}
 
 }
