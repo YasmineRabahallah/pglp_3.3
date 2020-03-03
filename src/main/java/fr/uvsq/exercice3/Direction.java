@@ -38,5 +38,10 @@ public enum Direction {
 	}
 	
 	public abstract char dir();
+	public char getdirection(){
+		return symbole;
+	}
+	
+	
 
 }
