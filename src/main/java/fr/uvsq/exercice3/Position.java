@@ -5,7 +5,7 @@ public class Position {
 	private int y ;
 	public Position (int x , int y ){
 		this.x=x;
-		this.y=x;
+		this.y=y;
 	}
 	public void change_position(int newx , int newy){
 		this.x += newx ;
