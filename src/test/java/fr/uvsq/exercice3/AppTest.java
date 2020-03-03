@@ -5,13 +5,13 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 /**
- * Unit test for simple App.
+ * Unit test .
  */
 public class AppTest 
     extends TestCase
 {
     /**
-     * Create the test case
+     * 
      *
      * @param testName name of the test case
      */

@@ -5,15 +5,22 @@ import java.util.ArrayList;
 public class Robots {
 	
     private ArrayList<Robot> listRobots;
-   
+   /**
+    * 
+    */
     public Robots() {
         listRobots = new ArrayList<Robot>();
     }
-  
+  /**
+   * 
+   * @param robot ajouter un robot 
+   */
     public void addRobot(Robot robot) {
       this.listRobots.add(robot);
     }
-   
+   /**
+    * 
+    */
     public void avanceTout() {
 
         for (Robot robot: listRobots) {
