@@ -2,11 +2,18 @@ package fr.uvsq.exercice3;
 
 
 public class RobotDynamique extends Robot  {
-
+ /**
+  * 
+  * @param position position de robot dynamique
+  * @param direction direction de robot dynamique
+  */
 	public RobotDynamique(Position position, Direction direction) {
 		super(position, direction);
 		
 	}
+	/**
+	 * 
+	 */
 	public void avance() {
 	    switch (this.getDirection()) {
 	    case NORD:
