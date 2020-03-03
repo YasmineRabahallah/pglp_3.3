@@ -7,16 +7,18 @@ public class Position {
 		this.x=x;
 		this.y=y;
 	}
-	public void change_position(int newx , int newy){
+	public void changeX(int newx){
 		this.x += newx ;
+		}
+	public void changeY(int newy){
 		this.y += newy ;
-	}
+		}
 	public int getX() {
-		return x;
+		return this.x;
 	}
 	
 	public int getY() {
-		return y;
+		return this.y;
 	}
 	
 
