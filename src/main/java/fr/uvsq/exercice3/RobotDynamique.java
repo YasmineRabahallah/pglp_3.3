@@ -32,13 +32,13 @@ public class RobotDynamique extends Robot  {
 	public void tourne() {
 	    switch (this.getDirection()) {
 	    case NORD:
-	        this.direction = Direction.EST ;
+	        this.direction = Direction.EST ;  break ;
 	    case EST:
-	    	this.direction = Direction.SUD ;
+	    	this.direction = Direction.SUD ; break ;
 	    case OUEST:
-	    	this.direction = Direction.NORD;
+	    	this.direction = Direction.NORD; break ;
 	    case SUD:
-	    	this.direction = Direction.OUEST ;
+	    	this.direction = Direction.OUEST ; break ;
 	    default:
 	}
 	}
