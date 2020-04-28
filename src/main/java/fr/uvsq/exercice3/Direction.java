@@ -1,13 +1,15 @@
 package fr.uvsq.exercice3;
+
 /**
- * 
- * @author Hamila
+ * enumeration Direction.
+ * @author rabahallah yasmine.
  *
  */
+
 public enum Direction {
-	OUEST,
-	NORD,
-	EST,
-	SUD;
-	
-  }
+  OUEST,
+  NORD,
+  EST,
+  SUD;
+
+}

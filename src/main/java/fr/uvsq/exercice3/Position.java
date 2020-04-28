@@ -1,45 +1,64 @@
 package fr.uvsq.exercice3;
+
 /**
- * 
- * @author Hamila
+ * class Position.
+ * @author rabahalah yasmine.
  *
  */
+
 public class Position {
-	private int x ;
-	private int y ;
-	public Position (int x , int y ){
-		this.x=x;
-		this.y=y;
-	}
-/**
- * 
- * @param newx position x pour avancer
- */
-	public void changeX(int newx){
-		this.x += newx ;
-		}
-/**
- * 
- * @param newy position y pour avancer
- */
-	public void changeY(int newy){
-		this.y += newy ;
-		}
-	
-/**
- * 
- * @return la position x 
- */
-	public int getX() {
-		return this.x;
-	}
-	/**
-	 * 
-	 * @return la position y
-	 */
-	public int getY() {
-		return this.y;
-	}
-	
+
+  /**
+   * int posX position sur l'axe x.
+   */
+
+  private int posX;
+  /**
+   * int posY position sue l'axe y.
+   */
+  private int posY;
+  /**
+   * constructeur Position.
+   * @param posX position sur l'axe x.
+   * @param posY position sur l'axe y.
+   */
+
+  public Position(int posX,int posY) {
+    this.posX = posX;
+    this.posY = posY;
+  }
+  /**
+   * methode pour changer la position sur l'axe x.
+   * @param newx position x pour avancer.
+   */
+
+  public void changeX(int newx) {
+    this.posX += newx;
+  }
+  /**
+   * methode pour changer la position sur l'axe y.
+   * @param newy position y pour avancer.
+   */
+
+  public void changeY(int newy) {
+    this.posY += newy;
+  }
+
+  /**
+   * methode pour retouner la position sur l'axe x.
+   * @return la position x .
+   */
+  public int getX() {
+    return this.posX;
+  }
+  /**
+   * methode pour retourner la position sur l'axe y.
+   * @return la position y.
+   */
+
+  public int getY() {
+    return this.posY;
+  }
+
 
 }
